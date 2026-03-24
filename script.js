@@ -62,6 +62,22 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
   });
+  // VIDEO HERO FIX MÓVIL
+const heroVideo = document.querySelector(".hero video");
+
+if (heroVideo) {
+  heroVideo.muted = true;
+
+  heroVideo.play().catch(() => {
+    console.log("Autoplay bloqueado, intentando interacción...");
+  });
+
+  // Forzar loop en móviles
+  heroVideo.addEventListener("ended", () => {
+    heroVideo.currentTime = 0;
+    heroVideo.play();
+  });
+}
 });
 
 
