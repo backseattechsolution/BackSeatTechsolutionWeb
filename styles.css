@@ -741,6 +741,27 @@ body{
     display: none;
   }
 
+  /* FIX TEXTO EN MÓVIL SERVICIOS */
+@media (max-width: 768px){
+
+  .service-grid {
+    text-align: left;
+  }
+
+  .service-grid h3 {
+    text-align: center;
+  }
+
+  .service-grid p {
+    text-align: justify;
+    line-height: 1.7;
+  }
+
+  .service-grid ul {
+    text-align: left;
+  }
+
+}
   
 
 }
