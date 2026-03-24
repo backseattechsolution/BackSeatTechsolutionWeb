@@ -745,11 +745,11 @@ body{
 @media (max-width: 768px){
 
   .service-grid {
-    text-align: left;
+    text-align: justify;
   }
 
   .service-grid h3 {
-    text-align: center;
+    text-align: justify;
   }
 
   .service-grid p {
@@ -758,7 +758,7 @@ body{
   }
 
   .service-grid ul {
-    text-align: left;
+    text-align: justify;
   }
 
 }
