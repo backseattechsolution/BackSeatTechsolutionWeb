@@ -618,10 +618,16 @@ body{
     gap: 10px;
   }
 
-  .main-nav a {
-    margin: 0;
-    font-size: 0.85rem;
-  }
+ .main-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px; /* fuerza misma altura */
+}
+  .main-nav a.cta {
+  height: 36px; /* igualar al resto */
+  padding: 6px 10px; /* ajusta para que no crezca */
+}
 
   /* HERO AJUSTADO */
   .hero {
